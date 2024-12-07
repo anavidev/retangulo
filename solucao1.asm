@@ -27,7 +27,7 @@ loop3:	MOV [D], 0x00
 	DEC C
 	JNZ loop3
 	MOV D, 0xC5
-	MOV [D], 0x11	; lado direito1
+	MOV [D], 0x11	; lado direito2
 
 	MOV D, 0xD1
 	MOV C, 5
