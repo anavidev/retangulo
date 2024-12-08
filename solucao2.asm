@@ -1,0 +1,19 @@
+	MOV D, 0xA1
+	MOV B, 0xD5
+	MOV C, 5
+.loop:	MOV [D], 0x11
+	MOV [B], 0x11
+	INC D
+	DEC B
+	DEC C
+	JNZ .loop
+
+	MOV D, 0xB1
+	MOV [D], 0x11
+	MOV B, 0xC1
+	MOV [B], 0x11
+
+	MOV D, 0xB5
+	MOV [D], 0x11
+	MOV B, 0xC5
+	MOV [B], 0x11
